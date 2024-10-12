@@ -40,8 +40,10 @@ const FoamCatchingGame: React.FC = () => {
   const [gameOver, setGameOver] = useState(false);
   const [leaderboard, setLeaderboard] = useState<number[]>([]);
   const [showLeaderboard, setShowLeaderboard] = useState(false);
+  console.log(showLeaderboard);
   const [fillPercentage, setFillPercentage] = useState(0);
   const [showWinMessage, setShowWinMessage] = useState(false);
+  console.log(showWinMessage);
   const [targetColor, setTargetColor] = useState(COLORS[0]);
   const [isMusicOn, setIsMusicOn] = useState(false);
 

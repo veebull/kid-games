@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Cat, Dog, PawPrint, Sparkles, RotateCcw, Trophy } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Cat, Dog, PawPrint, Sparkles, Trophy } from 'lucide-react';
+// import { Button } from '@/components/ui/button';
 
 // Import audio files
 import catSoundFile from '@/assets/cute-cat.mp3';
@@ -52,6 +52,7 @@ const CatAndDogGame: React.FC = () => {
     moveCharacterToNewPosition(setCatPosition);
     moveCharacterToNewPosition(setDogPosition);
   };
+  console.log(handleRestart());
 
   const moveCharacterToNewPosition = (
     setPosition: (position: { x: number; y: number }) => void
