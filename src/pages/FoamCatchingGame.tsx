@@ -23,15 +23,13 @@ const COLORS = [
 
   { name: 'Light Blue', value: '#1E90FF' },
   { name: 'Yellow', value: '#FFFF00' },
-  { name: 'Gold', value: '#FFD700' },
-  { name: 'Lemon', value: '#FFFACD' },
   { name: 'Orange', value: '#FFA500' },
   { name: 'Purple', value: '#8A2BE2' },
-  { name: 'Pink', value: '#FF69B4' },
-  { name: 'Lime', value: '#32CD32' },
-  { name: 'Cyan', value: '#00FFFF' },
-  { name: 'Magenta', value: '#FF00FF' },
-  { name: 'Coral', value: '#FF7F50' },
+  // { name: 'Pink', value: '#FF69B4' },
+  // { name: 'Lime', value: '#32CD32' },
+  // { name: 'Cyan', value: '#00FFFF' },
+  // { name: 'Magenta', value: '#FF00FF' },
+  // { name: 'Coral', value: '#FF7F50' },
 ];
 
 const FoamCatchingGame: React.FC = () => {
