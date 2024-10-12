@@ -2,8 +2,8 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { AlertCircle, Cat, Volume2, VolumeX } from 'lucide-react';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 
-const GAME_DURATION = 60; // 1 minute in seconds
-const BUBBLE_COUNT = 30; // Number of bubbles
+const GAME_DURATION = 120; // 1 minute in seconds
+const BUBBLE_COUNT = 45; // Number of bubbles
 import popAudioFile from '@/assets/pop.mp3';
 import backgroundMusicFile from '@/assets/fun-game-music.mp3';
 
