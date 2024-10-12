@@ -37,6 +37,15 @@ const CatAndDogGame: React.FC = () => {
     };
   }, []);
 
+  const moveCharacterToNewPosition = (
+    setPosition: (position: { x: number; y: number }) => void
+  ) => {
+    setPosition({
+      x: Math.random() * 90 + 5,
+      y: Math.random() * 90 + 5,
+    });
+  };
+
   const handleStart = () => {
     setIsPlaying(true);
     setScore(0);
@@ -51,16 +60,6 @@ const CatAndDogGame: React.FC = () => {
     setIsPlaying(false);
     moveCharacterToNewPosition(setCatPosition);
     moveCharacterToNewPosition(setDogPosition);
-  };
-  console.log(handleRestart());
-
-  const moveCharacterToNewPosition = (
-    setPosition: (position: { x: number; y: number }) => void
-  ) => {
-    setPosition({
-      x: Math.random() * 90 + 5,
-      y: Math.random() * 90 + 5,
-    });
   };
 
   const playSound = (audio: HTMLAudioElement | null) => {
@@ -192,6 +191,14 @@ const CatAndDogGame: React.FC = () => {
                 <Dog size={64} color='red' />
               </div>
             </>
+          )}
+          {!isPlaying && timeLeft !== 30 && (
+            <button
+              onClick={handleRestart}
+              className='mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors'
+            >
+              Restart Game
+            </button>
           )}
           {!isPlaying && (
             <div className='flex items-center justify-center h-full'>
